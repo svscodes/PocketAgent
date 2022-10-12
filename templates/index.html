@@ -14,22 +14,22 @@
     <div class="container"> 
         <h1>Pocket Agent</h1>
         
-          <form>
+          <form action="http://localhost:5000/agenda" method="post">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <label class="input-group-text" for="inputGroupSelect01">City</label>
                 </div>
-                <select class="custom-select" id="inputGroupSelect01">
+                <select name="location" class="custom-select" id="inputGroupSelect01">
                   <option selected>Location</option>
-                  <option value="1">Chennai</option>
-                  <option value="2">Mumbai</option>
-                  <option value="3">Delhi</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Delhi">Delhi</option>
                 </select>
               </div>
         
               <div class="form-group">
                 <label for="exampleFormControlSelect1">Hours of travel</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select name="hours" class="form-control" id="exampleFormControlSelect1">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -39,7 +39,7 @@
               </div>
         
             <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+          </form> 
     </div>
     
       
